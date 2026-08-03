@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://b1rl47matotq0"]
 
+[ext_resource type="Script" uid="uid://b1i8sgtvb7vmi" path="res://main.gd" id="1_cm0pq"]
 [ext_resource type="PackedScene" uid="uid://cccggwkghg2iw" path="res://BG.tscn" id="2_1bvp3"]
 [ext_resource type="PackedScene" uid="uid://epipc1qf2hn0" path="res://Dino.tscn" id="3_lquwl"]
-[ext_resource type="PackedScene" uid="uid://ba4ojile5v88c" path="res://ground.tscn" id="3_r0du0"]
+[ext_resource type="PackedScene" uid="uid://ba4ojile5v88c" path="res://Ground.tscn" id="3_r0du0"]
 
 [node name="Main" type="Node2D" unique_id=1065386877]
+script = ExtResource("1_cm0pq")
 
 [node name="BG" parent="." unique_id=719063800 instance=ExtResource("2_1bvp3")]
 
@@ -13,5 +15,5 @@ position = Vector2(89, 478)
 
 [node name="Ground" parent="." unique_id=379838250 instance=ExtResource("3_r0du0")]
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=348202670]
+[node name="Camera" type="Camera2D" parent="." unique_id=348202670]
 position = Vector2(576, 324)

@@ -6,9 +6,12 @@
 [ext_resource type="Texture2D" uid="uid://dk1tg5ce62m30" path="res://assets/img/background/plx-4.png" id="4_b16yh"]
 [ext_resource type="Texture2D" uid="uid://cvbcayt37vpl2" path="res://assets/img/background/plx-5.png" id="5_twoho"]
 
-[node name="BG" type="ParallaxBackground" unique_id=719063800]
+[node name="BG" type="Node2D" unique_id=1911628025]
 
-[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1658047007]
+[node name="Parallax2D5" type="Parallax2D" parent="." unique_id=1468281175]
+scroll_scale = Vector2(0, 1)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Parallax2D5" unique_id=1658047007]
 texture = ExtResource("1_36ycx")
 centered = false
 

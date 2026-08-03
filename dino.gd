@@ -8,15 +8,15 @@ func _physics_process(delta: float) -> void:
 	
 	if is_on_floor(): 
 		$RunCol.disabled = false
-		if Input.is_action_pressed("ui_accept"):  
+		if Input.is_action_pressed("ui_accept") || Input.is_action_pressed("ui_up"):  
 			velocity.y += JUMP_SPEED
 			$JumpSound.play()
 		elif Input.is_action_pressed("ui_down"):
-			$AnimatedSprite2D2.play("duck")
+			$Sprite.play("duck")
 			$RunCol.disabled = true
 		else:
-			$AnimatedSprite2D2.play("run")
-	else:
-		$AnimatedSprite2D2.play("jump")
+			$Sprite.play("run")
+	else: 
+		$Sprite.play("jump")
 	move_and_slide()
  

@@ -48,7 +48,7 @@ region = Rect2(48, 0, 24, 24)
 atlas = ExtResource("1_nb2aw")
 region = Rect2(72, 0, 24, 24)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_635b6"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_fdobs"]
 atlas = ExtResource("1_nb2aw")
 region = Rect2(144, 0, 24, 24)
 
@@ -123,11 +123,11 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_635b6")
+"texture": SubResource("AtlasTexture_fdobs")
 }],
 "loop": true,
 "name": &"jump",
-"speed": 10.0
+"speed": 5.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -165,11 +165,12 @@ texture_filter = 1
 scale = Vector2(8, 8)
 script = ExtResource("1_fdobs")
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=1008113461]
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1008113461]
+position = Vector2(-0.25, 0)
 sprite_frames = SubResource("SpriteFrames_i12gl")
-animation = &"idle"
+animation = &"jump"
 autoplay = "idle"
-frame_progress = 0.9572659
+frame_progress = 0.72249764
 
 [node name="RunCol" type="CollisionShape2D" parent="." unique_id=828554250]
 position = Vector2(-2, 0.5)
